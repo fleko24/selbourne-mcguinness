@@ -1,0 +1,663 @@
+// GENERAL STYLES
+
+.kitchen-description {
+
+    margin-top: 130px;
+    height:1800px;
+
+    .image-container {
+        position: relative;
+        height: 100vh;
+
+        .bg-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .overlay {
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 50vh;
+            background-color: var(--primary-color);
+            color: var(--white-font);
+            
+            .main-container {
+                
+                padding: 0;
+                width: 75%;
+
+                .text-container {
+                    
+                    padding: 3% 5% 0 7%;
+
+                    & h1 {
+                        font-weight: bold;
+                        font-size: var(--title-xl-device);
+                        margin-bottom: 1rem;
+                    }
+
+                    .description {
+                        font-weight: normal;
+                        font-size: var(--text-xl-device);
+                        color: var(--grey-font);
+                    }
+
+                    & blockquote {
+                        font-size: var(--bq-xl-device);
+                        color: #fff;
+                        font-style: italic;
+                        border-left: 4px solid #fff;
+                        margin: 1.3em 10px;
+                        padding: 0.3em 10px;
+                    }
+
+                    .btn-container {
+                        margin-top:  20px;
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        justify-content: flex-start;
+
+                        & Button {
+                           height: var(--height-btn-xl);
+                           width:var(--width-btn-xl);
+                           font-size: var(--text-xl-device);
+                        }
+                    }
+                }
+
+                .video-container {
+                    margin: 40px 2% 20px 2%;
+                    width: 1152px;
+                    height:648px;   
+                }
+            }
+            .optionals-container {
+                padding: 3% 3% 3% 3%;
+
+                .optionals-title {
+                    font-size: var(--subtitle-xl-device);
+                    color: var(--white-font);
+                    font-style: italic;
+                }
+
+                .options-list {
+                    list-style-type: circle;
+                    margin: 20px;
+
+                    .option {
+                        font-size: var(--text-xl-device);
+                        color: var(--grey-font);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+/************************************************/
+/* Extra small devices (phones, 600px and down) */
+/************************************************/
+@media only screen and (max-width: 600px) {
+    .kitchen-description {
+
+        margin-top: 80px;
+        height: 1450px;
+    
+        .image-container {
+            position: relative;
+            height: 100vh;
+    
+            .bg-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            .overlay {
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 50vh;
+                background-color: var(--primary-color);
+                color: var(--white-font);
+                
+                .main-container {
+                    
+                    padding: 0;
+                    width: 100%;
+    
+                    .text-container {
+                        
+                        padding: 3% 5% 0 7%;
+                       
+                        & h1 {
+                            font-weight: bold;
+                            font-size: var(--title-xs-device);
+                            margin-bottom: 1rem;
+                        }
+    
+                        .description {
+                            font-weight: normal;
+                            font-size: var(--text-xs-device);
+                            color: var(--grey-font);
+                        }
+    
+                        & blockquote {
+                            font-size: var(--bq-xs-device);
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 1.3em 10px;
+                            padding: 0.3em 10px;
+                        }
+    
+                        .btn-container {
+                            margin-top:  20px;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: flex-start;
+    
+                            & Button {
+                                height: var(--height-btn-xs);
+                                width:var(--width-btn-xs);
+                                font-size: var(--text-xs-device);
+                            }
+                        }
+                    }
+    
+                    .video-container {
+                        margin: 40px 2% 20px 2%;
+                        width: 280px;
+                        height:158px;   
+                    }
+                }
+                .optionals-container {
+                    padding: 3% 3% 3% 7%;
+                    width: 100%;
+    
+                    .optionals-title {
+                        font-size: var(--subtitle-xs-device);
+                        color: var(--white-font);
+                        font-style: italic;
+                    }
+    
+                    .options-list {
+                        list-style-type: circle;
+                        margin: 20px;
+    
+                        .option {
+                            font-size: var(--text-xs-device);
+                            color: var(--grey-font);
+                        }
+                    }
+                    .btn-container {
+                        & Button {
+                            height: var(--height-btn-xs);
+                            width:var(--width-btn-xs);
+                            font-size: var(--text-xs-device);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .kitchen-description {
+
+        margin-top: 100px;
+        height: 1600px;
+    
+        .image-container {
+            position: relative;
+            height: 100vh;
+    
+            .bg-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            .overlay {
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 50vh;
+                background-color: var(--primary-color);
+                color: var(--white-font);
+                
+                .main-container {
+                    
+                    padding: 0;
+                    width: 75%;
+    
+                    .text-container {
+                        
+                        padding: 3% 5% 0 7%;
+                       
+                        & h1 {
+                            font-weight: bold;
+                            font-size: var(--title-s-device);
+                            margin-bottom: 1rem;
+                        }
+    
+                        .description {
+                            font-weight: normal;
+                            font-size: var(--text-s-device);
+                            color: var(--grey-font);
+                        }
+    
+                        & blockquote {
+                            font-size: var(--bq-s-device);
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 1.3em 10px;
+                            padding: 0.3em 10px;
+                        }
+    
+                        .btn-container {
+                            margin-top:  20px;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: flex-start;
+    
+                            & Button {
+                                height: var(--height-btn-s);
+                                width:var(--width-btn-s);
+                                font-size: var(--text-s-device);
+                            }
+                        }
+                    }
+    
+                    .video-container {
+                        margin: 40px 2% 20px 2%;
+                        width: 540px;
+                        height:304px;   
+                    }
+                }
+                .optionals-container {
+                    padding: 3% 3% 3% 3%;
+    
+                    .optionals-title {
+                        font-size: var(--subtitle-s-device);
+                        color: var(--white-font);
+                        font-style: italic;
+                    }
+    
+                    .options-list {
+                        list-style-type: circle;
+                        margin: 20px;
+    
+                        .option {
+                            font-size: var(--text-s-device);
+                            color: var(--grey-font);
+                        }
+                    }
+                    .btn-container {
+                        & Button {
+                            height: var(--height-btn-s);
+                            width:var(--width-btn-s);
+                            font-size: var(--text-s-device);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .kitchen-description {
+
+        margin-top: 100px;
+        height: 1650px;
+    
+        .image-container {
+            position: relative;
+            height: 100vh;
+    
+            .bg-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            .overlay {
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 50vh;
+                background-color: var(--primary-color);
+                color: var(--white-font);
+                
+                .main-container {
+                    
+                    padding: 0;
+                    width: 75%;
+    
+                    .text-container {
+                        
+                        padding: 3% 5% 0 7%;
+                       
+    
+                        & h1 {
+                            font-weight: bold;
+                            font-size: var(--title-l-device);
+                            margin-bottom: 1rem;
+                        }
+    
+                        .description {
+                            font-weight: normal;
+                            font-size: var(--text-l-device);
+                            color: var(--grey-font);
+                        }
+    
+                        & blockquote {
+                            font-size: var(--bq-l-device);
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 1.3em 10px;
+                            padding: 0.3em 10px;
+                        }
+    
+                        .btn-container {
+                            margin-top:  20px;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: flex-start;
+    
+                            & Button {
+                                height: var(--height-btn-l);
+                                width:var(--width-btn-l);
+                                font-size: var(--text-l-device);
+                            }
+                        }
+                    }
+    
+                    .video-container {
+                        margin: 40px 1% 20px 1%;
+                        width: 720px;
+                        height:405px;   
+                    }
+                }
+                .optionals-container {
+                    padding: 3% 3% 3% 3%;
+    
+                    .optionals-title {
+                        font-size: var(--subtitle-l-device);
+                        color: var(--white-font);
+                        font-style: italic;
+                    }
+    
+                    .options-list {
+                        list-style-type: circle;
+                        margin: 20px;
+    
+                        .option {
+                            font-size: var(--text-l-device);
+                            color: var(--grey-font);
+                        }
+                    }
+                    .btn-container {
+                        & Button {
+                            height: var(--height-btn-l);
+                            width:var(--width-btn-l);
+                            font-size: var(--text-l-device);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+   
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .kitchen-description {
+
+        margin-top: 130px;
+        height: 1800px;
+    
+        .image-container {
+            position: relative;
+            height: 100vh;
+    
+            .bg-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            .overlay {
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 50vh;
+                background-color: var(--primary-color);
+                color: var(--white-font);
+                
+                .main-container {
+                    
+                    padding: 0;
+                    width: 75%;
+    
+                    .text-container {
+                        
+                        padding: 3% 5% 0 7%;
+                       
+    
+                        & h1 {
+                            font-weight: bold;
+                            font-size: var(--title-l-device);
+                            margin-bottom: 1rem;
+                        }
+    
+                        .description {
+                            font-weight: normal;
+                            font-size: var(--text-l-device);
+                            color: var(--grey-font);
+                        }
+    
+                        & blockquote {
+                            font-size: var(--bq-l-device);
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 1.3em 10px;
+                            padding: 0.3em 10px;
+                        }
+    
+                        .btn-container {
+                            margin-top:  20px;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: flex-start;
+    
+                            & Button {
+                                height: var(--height-btn-l);
+                                width:var(--width-btn-l);
+                                font-size: var(--text-l-device);
+                            }
+                        }
+                    }
+    
+                    .video-container {
+                        margin: 40px 1% 20px 1%;
+                        width: 960px;
+                        height:540px;   
+                    }
+                }
+                .optionals-container {
+                    padding: 3% 3% 3% 3%;
+    
+                    .optionals-title {
+                        font-size: var(--subtitle-l-device);
+                        color: var(--white-font);
+                        font-style: italic;
+                    }
+    
+                    .options-list {
+                        list-style-type: circle;
+                        margin: 20px;
+    
+                        .option {
+                            font-size: var(--text-l-device);
+                            color: var(--grey-font);
+                        }
+                    }
+                    .btn-container {
+                        & Button {
+                            height: var(--height-btn-l);
+                            width:var(--width-btn-l);
+                            font-size: var(--text-l-device);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .kitchen-description {
+
+        margin-top: 130px;
+        height: 1800px;
+    
+        .image-container {
+            position: relative;
+            height: 100vh;
+    
+            .bg-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            .overlay {
+                display: flex;
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                height: 50vh;
+                background-color: var(--primary-color);
+                color: var(--white-font);
+                
+                .main-container {
+                    
+                    padding: 0;
+                    width: 75%;
+    
+                    .text-container {
+                        
+                        padding: 3% 5% 0 7%;
+                       
+    
+                        & h1 {
+                            font-weight: bold;
+                            font-size: var(--title-xl-device);
+                            margin-bottom: 1rem;
+                        }
+    
+                        .description {
+                            font-weight: normal;
+                            font-size: var(--text-xl-device);
+                            color: var(--grey-font);
+                        }
+    
+                        & blockquote {
+                            font-size: var(--bq-xl-device);
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 1.3em 10px;
+                            padding: 0.3em 10px;
+                        }
+    
+                        .btn-container {
+                            margin-top:  20px;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            justify-content: flex-start;
+    
+                            & Button {
+                                height: var(--height-btn-l);
+                                width:var(--width-btn-l);
+                                font-size: var(--text-l-device);
+                            }
+                        }
+                    }
+    
+                    .video-container {
+                        margin: 40px 2% 20px 2%;
+                        width: 1152px;
+                        height:100%;   
+                    }
+                }
+
+                .optionals-container {
+                    padding: 3% 3% 3% 3%;
+    
+                    .optionals-title {
+                        font-size: var(--subtitle-xl-device);
+                        color: var(--white-font);
+                        font-style: italic;
+                    }
+    
+                    .options-list {
+                        list-style-type: circle;
+                        margin: 20px;
+    
+                        .option {
+                            font-size: var(--text-xl-device);
+                            color: var(--grey-font);
+                        }
+                    }
+
+                    .btn-container {
+                        & Button {
+                            height: var(--height-btn-l);
+                            width:var(--width-btn-l);
+                            font-size: var(--text-l-device);
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+    
+}

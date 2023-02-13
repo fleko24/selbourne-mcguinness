@@ -1,0 +1,382 @@
+.about {
+
+    margin-top: 130px;
+    height: 1300px;;
+
+    .bg-image {
+        position: relative;
+        display: flex;
+        background-image: url('../../images/About/Rift.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 1300px;
+        z-index: -1;
+
+        .overlay-right-panel {
+            position: absolute;
+            right: 0;
+            background-color: var(--primary-color);
+            height: 1300px;
+            width: 60%;
+            z-index:1;
+
+            .content {
+        
+                padding: 2% 5%;
+           
+                .title {
+                    font-weight: 600;
+                    font-size: var(--title-xl-device);
+                    color: var(--white-font);
+                }
+        
+                .subtitle {
+                    font-weight: 500;
+                    font-size: var(--subtitle-xl-device);
+                    color: var(--white-font);
+                }
+        
+                .text {
+                    font-size: var(--text-xl-device);
+                    color: var(--grey-font);
+                    text-align: justify;
+        
+                    & blockquote {
+                        font: var(--bq-xl-device) "Open Sans",Helvetica,sans-serif;
+                        text-align: left;
+                        color: #fff;
+                        font-style: italic;
+                        border-left: 4px solid #fff;
+                        margin: 20px 10px;
+                        padding: 0.3em 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .about {
+
+        margin-top: 100px;
+        height: 1400px;;
+    
+        .bg-image {
+            position: relative;
+            display: flex;
+            background-image: url('../../images/About/Rift.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:1400px;
+            z-index: -1;
+    
+            .overlay-right-panel {
+                position: absolute;
+                right: 0;
+                background-color: var(--primary-color);
+                height: 1400px;
+                width: 100%;
+                z-index:1;
+    
+                .content {
+            
+                    padding: 2% 5%;
+               
+                    .title {
+                        font-weight: 600;
+                        font-size: var(--title-xs-device);
+                        color: var(--white-font);
+                    }
+            
+                    .subtitle {
+                        font-weight: 500;
+                        font-size: var(--subtitle-xs-device);
+                        color: var(--white-font);
+                    }
+            
+                    .text {
+                        font-size: var(--text-xs-device);
+                        color: var(--grey-font);
+                        text-align: justify;
+                    }
+
+                    .bq {
+                        font: var(--bq-xs-device) "Open Sans",Helvetica,sans-serif;
+                        text-align: left;
+                        color: #fff;
+                        font-style: italic;
+                        border-left: 4px solid #fff;
+                        margin: 20px 10px;
+                        padding: 0.3em 10px;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .about {
+
+        margin-top: 100px;
+        height: 1400px;;
+    
+        .bg-image {
+            position: relative;
+            display: flex;
+            background-image: url('../../images/About/Rift.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:1400px;
+            z-index: -1;
+    
+            .overlay-right-panel {
+                position: absolute;
+                right: 0;
+                background-color: var(--primary-color);
+                height: 1400px;
+                width: 60%;
+                z-index:1;
+    
+                .content {
+            
+                    padding: 2% 5%;
+               
+                    .title {
+                        font-weight: 600;
+                        font-size: var(--title-s-device);
+                        color: var(--white-font);
+                    }
+            
+                    .subtitle {
+                        font-weight: 500;
+                        font-size: var(--subtitle-s-device);
+                        color: var(--white-font);
+                    }
+            
+                    .text {
+                        font-size: var(--text-s-device);
+                        color: var(--grey-font);
+                        text-align: justify;
+            
+                        & blockquote {
+                            font: var(--bq-s-device) "Open Sans",Helvetica,sans-serif;
+                            text-align: left;
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 20px 10px;
+                            padding: 0.3em 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about {
+
+        margin-top: 100px;
+        height: 1450px;;
+    
+        .bg-image {
+            position: relative;
+            display: flex;
+            background-image: url('../../images/About/Rift.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:1450px;
+            z-index: -1;
+    
+            .overlay-right-panel {
+                position: absolute;
+                right: 0;
+                background-color: var(--primary-color);
+                height: 1450px;
+                width: 60%;
+                z-index:1;
+    
+                .content {
+            
+                    padding: 2% 5%;
+               
+                    .title {
+                        font-weight: 600;
+                        font-size: var(--title-l-device);
+                        color: var(--white-font);
+                    }
+            
+                    .subtitle {
+                        font-weight: 500;
+                        font-size: var(--subtitle-l-device);
+                        color: var(--white-font);
+                    }
+            
+                    .text {
+                        font-size: var(--text-l-device);
+                        color: var(--grey-font);
+                        text-align: justify;
+            
+                        & blockquote {
+                            font: var(--bq-l-device) "Open Sans",Helvetica,sans-serif;
+                            text-align: left;
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 20px 10px;
+                            padding: 0.3em 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .about {
+
+        margin-top: 130px;
+        height: 1300px;;
+    
+        .bg-image {
+            position: relative;
+            display: flex;
+            background-image: url('../../images/About/Rift.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:1300px;
+            z-index: -1;
+    
+            .overlay-right-panel {
+                position: absolute;
+                right: 0;
+                background-color: var(--primary-color);
+                height: 1300px;
+                width: 60%;
+                z-index:1;
+    
+                .content {
+            
+                    padding: 2% 5%;
+               
+                    .title {
+                        font-weight: 600;
+                        font-size: var(--title-l-device);
+                        color: var(--white-font);
+                    }
+            
+                    .subtitle {
+                        font-weight: 500;
+                        font-size: var(--subtitle-l-device);
+                        color: var(--white-font);
+                    }
+            
+                    .text {
+                        font-size: var(--text-l-device);
+                        color: var(--grey-font);
+                        text-align: justify;
+            
+                        & blockquote {
+                            font: var(--bq-l-device) "Open Sans",Helvetica,sans-serif;
+                            text-align: left;
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 20px 10px;
+                            padding: 0.3em 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .about {
+
+        margin-top: 130px;
+        height: 1300px;;
+    
+        .bg-image {
+            position: relative;
+            display: flex;
+            background-image: url('../../images/About/Rift.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:1300px;
+            z-index: -1;
+    
+            .overlay-right-panel {
+                position: absolute;
+                right: 0;
+                background-color: var(--primary-color);
+                height: 1300px;
+                width: 60%;
+                z-index:1;
+    
+                .content {
+            
+                    padding: 2% 5%;
+               
+                    .title {
+                        font-weight: 600;
+                        font-size: var(--title-xl-device);
+                        color: var(--white-font);
+                    }
+            
+                    .subtitle {
+                        font-weight: 500;
+                        font-size: var(--subtitle-xl-device);
+                        color: var(--white-font);
+                    }
+            
+                    .text {
+                        font-size: var(--text-xl-device);
+                        color: var(--grey-font);
+                        text-align: justify;
+            
+                        & blockquote {
+                            font: var(--bq-xl-device) "Open Sans",Helvetica,sans-serif;
+                            text-align: left;
+                            color: #fff;
+                            font-style: italic;
+                            border-left: 4px solid #fff;
+                            margin: 20px 10px;
+                            padding: 0.3em 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

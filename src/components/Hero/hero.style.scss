@@ -1,0 +1,248 @@
+.hero {
+    background-color: var(--overlay);
+    color: var(--text-white);
+    height: 100vh;
+    position: relative;
+    padding-top: 10%;
+
+
+    & :before {
+        content: '';
+        background-image: url('../images/header/img000.jpg');
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    .content {
+        object-fit: contain;
+        padding: 0 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    & p:first-child {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 70px;
+        text-align: center;
+        margin: auto;
+        color: #fff;
+        min-height: 250px;
+        text-shadow: 1px 1px 0px #000;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .hero {
+        background-color: var(--overlay);
+        color: var(--text-white);
+        height: 100vh;
+        position: relative;
+        padding-top: 25%;
+    
+        & :before {
+            content: '';
+            background-image: url('../images/header/img000.jpg');
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    
+        .content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;;
+    
+            & p:first-child {
+                font-size: 40px;
+                font-weight: bold;
+                line-height: 70px;
+                text-align: center;
+                margin: auto;
+                color: #fff;
+                min-height: 250px;
+                text-shadow: 1px 1px 0px #000;
+            }
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .hero {
+        background-color: var(--overlay);
+        color: var(--text-white);
+        height: 100vh;
+        position: relative;
+        padding-top: 25%;
+        & :before {
+            content: '';
+            background-image: url('../images/header/img000.jpg');
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    
+        .content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            & p:first-child {
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 80px;
+                text-align: center;
+                margin: auto;
+                color: #fff;
+                min-height: 250px;
+                text-shadow: 1px 1px 0px #000;
+            }
+        }    
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+    .hero {
+        background-color: var(--overlay);
+        color: var(--text-white);
+        height: 100vh;
+        position: relative;
+        padding-top: 10%;
+    
+        & :before {
+            content: '';
+            background-image: url('../images/header/img000.jpg');
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    
+        .content {
+            height: 100%;
+            padding: 0 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+    
+            & p:first-child {
+                font-size: 60px;
+                padding-top: 5%;
+                font-weight: bold;
+                line-height: 90px;
+                text-align: center;
+                margin: auto;
+                color: #fff;
+                min-height: 250px;
+                text-shadow: 1px 1px 0px #000;
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    .hero {
+        background-color: var(--overlay);
+        color: var(--text-white);
+        height: 100vh;
+        position: relative;
+    
+        & :before {
+            content: '';
+            background-image: url('../images/header/img000.jpg');
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    
+        .content {
+            padding: 0 5%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            & p:first-child {
+                font-size: 70px;
+                font-weight: bold;
+                line-height: 100px;
+                text-align: center;
+                margin: auto;
+                color: #fff;
+                min-height: 250px;
+                text-shadow: 1px 1px 0px #000;
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .hero {
+        background-color: var(--overlay);
+        color: var(--text-white);
+        height: 100vh;
+        position: relative;
+    
+        & :before {
+            content: '';
+            background-image: url('../images/header/img000.jpg');
+            background-position: center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    
+        .content {
+            padding: 0% 5%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+        
+            & p:first-child {
+                font-size: 80px;
+                font-weight: bold;
+                line-height: 110px;
+                text-align: center;
+                margin: auto;
+                color: #fff;
+                min-height: 250px;
+                text-shadow: 1px 1px 0px #000;
+            }
+        }
+    }
+}
