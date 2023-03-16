@@ -52,21 +52,3 @@ const About = () => {
 }
 
 export default About 
-
-
-
-
-{/*
-<div className='right-panel'>
-            <div className='title'>
-                <span className='big'>About </span>
-                <span className='normal'>Us.</span>
-            </div> 
-            
-            <div className='content'> 
-                <p className='texto'>
-                    
-                       
-            </div>
-        </div>
-</div>*/}
